@@ -1,0 +1,23 @@
+
+1. curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Jim -H "Content-Type: application/json" -d "{'name': 'Jim', 'snacks': ['treats', 'sticks'], 'age': 11, 'isSick': True}"
+curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Bob -H "Content-Type: application/json" -d "{'name': 'Bob', 'snacks': ['treats', 'sticks'], 'age': 3, 'isSick': False}"
+curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Mat -H "Content-Type: application/json" -d "{'name': 'Mat', 'snacks': ['treats', 'sticks'], 'age': 4, 'isSick': True}"
+curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Fluffy -H "Content-Type: application/json" -d "{'name': 'Fluffy', 'snacks': ['treats', 'bones'], 'age': 11, 'isSick': True}"
+curl -i -XPUT http://localhost:8098/buckets/s25537/keys/dogger -H "Content-Type: application/json" -d "{'name': 'dogger', 'snacks': ['bones'], 'age': 3, 'isSick': False}"
+2. curl -i -XGET http://localhost:8098/buckets/s25537/keys/Jim 
+
+3. curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Jim -H "Content-Type: application/json" -d "{'name': 'Jim', 'snacks': ['treats', 'sticks'], 'age': 11,  'isSick: True, 'Birth':2010}" 
+
+4. curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Jim -H "Content-Type: application/json" -d "{'name': 'Jim', 'snacks': ['treats', 'sticks'], 'age': 11, 'isSick': True}"
+
+5. curl -i -XPUT http://localhost:8098/buckets/s25537/keys/Jim -H "Content-Type: application/json" -d "{'name': 'Jim', 'snacks': ['treats', 'sticks'], 'age': 30, 'isSick': True}" 
+
+6. curl -i -XDELETE http://localhost:8098/buckets/s25537/keys/Jim
+
+7. curl -i -XGET http://localhost:8098/buckets/s25537/keys/Jim
+
+8. curl -i -XPOST http://localhost:8098/buckets/s25537/keys -i -H "Content-Type: application/json" -d "{'name': 'Jim', 'snacks': ['treats', 'sticks'], 'age': 30, 'isSick': True}" 
+
+9. curl -i -XGET http://localhost:8098/buckets/s25537/keys/fgewiyew 
+
+10. curl -i -XDELETE http://localhost:8098/buckets/s25537/keys/fgewiyew 
